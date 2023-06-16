@@ -1,0 +1,7 @@
+{
+    "version": 1.0,
+    "timestamp": 1000,
+    "seqnumber": 123,
+    "status": "ok",
+    "request": "ping"
+}

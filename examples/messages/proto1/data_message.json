@@ -1,0 +1,22 @@
+{
+    "version": 1.0,
+    "timestamp": 1000,
+    "seqnumber": 123,
+    "status": "ok",
+    "objects":{
+        "objectID": "1a2b3c",
+        "speed": 22,
+        "speedConfidence": 1,
+        "longAcc": 10,
+        "longAccConfindence": 1,
+        "positionConfidence": 100,
+        "heading": 366,
+        "headingConfidence":2,
+        "lat":987654321,
+        "long": 123456789,
+        "length":100,
+        "lengthConfidence":3,
+        "lane":1,
+        "laneConfidence": 1
+    }
+}
