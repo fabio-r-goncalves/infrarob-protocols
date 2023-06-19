@@ -21,7 +21,7 @@ period = 1
 def handleRecvdMessage(message):
     global clientIP, clientPort, period
     data = json.loads(message)
-    if('config' in data):
+    if('config' in data and data['config'] is not ""):
         newIp = data["config"]["datasinkIP"]
         newPort = int(data["config"]["datasinkPort"])
         newPeriod = int(data["config"]["sendingMethod"]["period"])

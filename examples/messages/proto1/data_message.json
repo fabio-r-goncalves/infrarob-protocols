@@ -3,7 +3,7 @@
     "timestamp": 1000,
     "seqnumber": 123,
     "status": "ok",
-    "objects":{
+    "objects":[{
         "objectID": "1a2b3c",
         "speed": 22,
         "speedConfidence": 1,
@@ -18,5 +18,5 @@
         "lengthConfidence":3,
         "lane":1,
         "laneConfidence": 1
-    }
+    }]
 }
