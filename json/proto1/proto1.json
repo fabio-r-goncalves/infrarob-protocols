@@ -11,7 +11,7 @@
             "period": 1
         }
     },
-    "objects":{
+    "objects":[{
         "objectID": "1a2b3c",
         "speed": 22,
         "speedConfidence": 1,
@@ -26,6 +26,6 @@
         "lengthConfidence":3,
         "lane":1,
         "laneConfidence": 1
-    },
+    }],
     "request": "config"
 }
