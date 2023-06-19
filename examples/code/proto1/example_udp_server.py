@@ -3,6 +3,11 @@ import json
 import threading
 import time
 
+from messages.proto1_message import Proto1Message
+from messages.proto1_config_message import Config
+from messages.proto1_object_messages import Proto1Objects
+
+
 
 serverIP = "0.0.0.0"
 serverPort = 8888
@@ -17,6 +22,18 @@ clientPort = None
 message = None
 period = 1
 
+
+def getMessageHeader():
+    return Proto1Message(112,1,"ok")
+
+def getObjectMessage():
+    message = getMessageHeader()
+    objects = [
+        Proto1Objects(123,20,1,4,1,230,1,999999999,111111111,2,100,1,1,0).ObjectsToJson(),
+        Proto1Objects(124,10,2,5,2,240,1,999999888,222111111,3,120,1,1,0).ObjectsToJson()
+    ]
+    message.setObjects(objects)
+    return message.messageToJson()
 
 def handleRecvdMessage(message):
     global clientIP, clientPort, period
