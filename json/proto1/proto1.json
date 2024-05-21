@@ -11,7 +11,7 @@
             "period": 1
         }
     },
-    "objects":[{
+    "pseudocams":[{
         "objectID": "1a2b3c",
         "speed": 22,
         "speedConfidence": 1,
@@ -27,5 +27,11 @@
         "lane":1,
         "laneConfidence": 1
     }],
+    "pseudodenms":[{
+        "eventID": "1",
+        "eventType": "works",
+        "locationLat": 987654321,
+        "locationLon": 123456789
+    }]
     "request": "config"
 }
